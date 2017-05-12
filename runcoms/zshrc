@@ -11,3 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias dropbox_encrypted_mount="cryfs ~/Dropbox/encrypted_do_not_touch ~/Dropbox_encrypted"
+alias aptgetupdateshit="sudo apt update ; sudo apt dist-upgrade"
+
+stty -ixon
