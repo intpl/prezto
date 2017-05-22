@@ -16,5 +16,15 @@ fi
 
 alias dropbox_encrypted_mount="cryfs ~/Dropbox/encrypted_do_not_touch ~/Dropbox_encrypted"
 alias aptgetupdateshit="sudo apt update ; sudo apt dist-upgrade"
+alias cdi="cd ~/code/bytecash"
+
+alias v="vim"
+alias g="git"
 
 stty -ixon
+unalias rm
+
+mkdircd() {
+  mkdir -p -- "$1" &&
+  cd -P -- "$1"
+}

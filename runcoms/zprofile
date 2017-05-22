@@ -66,11 +66,11 @@ fi
 # Temporary Files
 #
 
-if [[ ! -d "$TMPDIR" ]]; then
-  export TMPDIR="$(mktemp -d)"
-fi
-
-TMPPREFIX="${TMPDIR%/}/zsh"
+#if [[ ! -d "$TMPDIR" ]]; then
+#  export TMPDIR="$(mktemp -d)"
+#fi
+#
+#TMPPREFIX="${TMPDIR%/}/zsh"
 
 export FZF_DEFAULT_COMMAND='rg --files --follow --color=never --glob "!./git/*"'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
