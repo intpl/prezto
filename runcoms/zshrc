@@ -5,9 +5,8 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+export NVM_LAZY_LOAD=true
+source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -29,9 +28,10 @@ fpath=(~/xing-scripts/completion/zsh $fpath)
 
 alias dropbox_encrypted_mount="cryfs /opt/Dropbox/encrypted_do_not_touch ~/Dropbox_encrypted"
 alias aptgetupdateshit="sudo apt update && sudo apt dist-upgrade"
-alias cdi="cd ~/work/malt"
+alias cdi="cd ~/work/next-best-action"
 
 alias v="vim"
+alias vi="vim -u NONE"
 alias g="git"
 
 alias xs='xing x sync --app "${PWD##*/}" --dir "${PWD##*/}:$(PWD)"'
