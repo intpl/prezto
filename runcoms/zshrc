@@ -19,6 +19,7 @@ fi
 stty -ixon
 unalias rm
 unsetopt share_history
+setopt clobber
 
 mkdircd() {
   mkdir -p -- "$1" &&
@@ -29,18 +30,11 @@ fpath=(~/xing-scripts/completion/zsh $fpath)
 
 alias dropbox_encrypted_mount="cryfs /opt/Dropbox/encrypted_do_not_touch ~/Dropbox_encrypted"
 alias aptgetupdateshit="sudo apt update && sudo apt dist-upgrade"
-alias cdi="cd ~/work/onboarding"
+alias cdi="cd ~/work/order-frontend"
 
 alias v="vim"
 alias vi="vim -u NONE"
 alias g="git"
-
-alias xs='xing x sync --app "${PWD##*/}" --dir "${PWD##*/}:$(PWD)"'
-alias xs-d='xing x sync --app "${PWD##*/}"'
-alias xf='xing x sync -f --app "${PWD##*/}" --dir "${PWD##*/}:$(PWD)"'
-alias xl='xing x logs -f --app "${PWD##*/}"'
-alias xc='xing x exec --app "${PWD##*/}" rails console'
-alias xp='xing x exec --app "${PWD##*/}" pry-remote'
 
 alias zc='bundle exec rails c'
 alias zs='bundle exec rails s'
