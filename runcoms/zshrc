@@ -26,6 +26,10 @@ mkdircd() {
   cd -P -- "$1"
 }
 
+parallel_download() {
+  lftp -e "pget -n 5 -c $1 exit"
+}
+
 fpath=(~/xing-scripts/completion/zsh $fpath)
 
 alias dropbox_encrypted_mount="cryfs /opt/Dropbox/encrypted_do_not_touch ~/Dropbox_encrypted"
