@@ -34,7 +34,7 @@ fpath=(~/xing-scripts/completion/zsh $fpath)
 
 alias dropbox_encrypted_mount="cryfs /opt/Dropbox/encrypted_do_not_touch ~/Dropbox_encrypted"
 alias aptgetupdateshit="sudo apt update && sudo apt dist-upgrade"
-alias cdi="cd ~/work/order-frontend"
+alias cdi="cd ~/work/ytpacks"
 
 alias v="vim"
 alias vi="vim -u NONE"
